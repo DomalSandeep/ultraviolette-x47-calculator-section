@@ -1,0 +1,432 @@
+/* =====================
+   GLOBAL & BASE STYLES
+   ===================== */
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* =====================
+   NAVIGATION BAR
+   ===================== */
+.nav-bar {
+  width: 100%;
+  height: auto;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.middle {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.middle a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.middle a:hover {
+  opacity: 0.7;
+}
+
+.right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.right a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.config {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+}
+
+.dropdown-btn:hover {
+  opacity: 0.7;
+}
+
+/* =====================
+   SAVINGS HEADER SECTION
+   ===================== */
+.savings-section {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: end;
+}
+
+.savings-label {
+  font-family: "Eurostile", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #231f20;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.main-heading {
+  font-family: "Eurostile", sans-serif;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 130%;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-heading span {
+  font-family: "Eurostile", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+}
+
+.description {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #666666;
+  font-family: "Brutal", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* =====================
+   SAVINGS CONTAINER
+   ===================== */
+.savings-container {
+  display: flex;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.left-c {
+  width: 50%;
+}
+
+.right-c {
+  width: 50%;
+}
+
+/* =====================
+   SLIDERS SECTION
+   ===================== */
+.slider-item {
+  /* Container for each slider */
+}
+
+.slider-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 0.32px;
+}
+
+.custom-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #000 0%, #000 40%, #d3d3d3 40%, #d3d3d3 100%);
+  outline: none;
+  cursor: pointer;
+  border-radius: 0;
+  margin: 50px 0px 25px 0px;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.custom-slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+/* =====================
+   TOTAL SAVINGS
+   ===================== */
+.total-savings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.total-savings h3 {
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.5;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.amount {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #333333;
+  font-family: "Disket Mono", monospace;
+}
+
+/* =====================
+   COMPARISON CARDS
+   ===================== */
+.comparison-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.cost-card {
+  max-width: 280px;
+  text-align: center;
+  background: rgb(245, 245, 245);
+  padding: 30px;
+  border-radius: 10px;
+  
+}
+
+.cost-card img {
+  width: 100%;
+}
+.cost-card img {
+  width: 100%;
+  align-self: anchor-center;
+}
+.x47 {
+  max-width: 120px;
+}
+
+.ice-motor {
+  /* ICE motorcycle heading */
+}
+
+.cost-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cost-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cost-txt {
+  font-family: "Eurostile", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #231f20;
+}
+
+.note {
+  color: rgba(102, 102, 102, 0.5);
+  font-weight: 400;
+  line-height: 140%;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 0;
+  text-transform: none;
+}
+
+/* =====================
+   MOBILE (max-width: 768px)
+   ===================== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 15px;
+  }
+
+  /* Header Section */
+  .savings-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .savings-label {
+    margin: 10px 0;
+  }
+
+  .main-heading {
+    white-space: normal;
+    font-size: 22px;
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Container */
+  .savings-container {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 10px 0;
+  }
+
+  .left-c,
+  .right-c {
+    width: 100%;
+  }
+
+  /* Sliders */
+  .custom-slider {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .custom-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    background-size: 20px;
+  }
+
+  .slider-content {
+    font-size: 12px;
+  }
+
+  /* Comparison Cards */
+  .comparison-grid {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .cost-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  .x47 {
+    max-width: 50px;
+  }
+
+  .ice-motor {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .cost-txt {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .cost-details-wrapper {
+    font-size: 12px;
+  }
+
+  .cost-details {
+    justify-content: space-between;
+  }
+
+  .bottom-content-wrapper {
+    gap: 10px;
+  }
+
+  /* Total Savings */
+  .total-savings {
+    margin-top: 20px;
+    gap: 0;
+    text-align: center;
+  }
+
+  .total-savings h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1;
+    letter-spacing: 0.32px;
+  }
+
+  .amount {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1;
+    letter-spacing: 0.32px;
+  }
+
+  /* Note */
+  .note {
+    font-size: 8px;
+    text-align: center;
+  }
+}

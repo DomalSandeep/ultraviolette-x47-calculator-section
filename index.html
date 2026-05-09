@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultravoilette ReDesign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <nav>
+        <div class="nav-bar">
+            <div class="left">
+                <img src="/assets/uv-full-white-logo.svg" alt="">
+            </div>
+            <div class="middle">
+                <a href="">vehicles</a>
+                <a href="">samrt tech</a>
+                <a href="">uv racing</a>
+                <a href="">lifestyle</a>
+                <a href="">discover</a>
+            </div>
+            <div class="right">
+                <a href="#">BOOK TEST RIDE</a>
+                <button class="config">CONFIGURE</button> <button class="dropdown-btn">▼</button>
+            </div>
+        </div>
+    </nav> -->
+    <section class="savings">
+        <div class="container">
+            <div class="savings-section">
+                <div class="desc-left">
+                    <!-- "SAVINGS" text -->
+                    <p class="savings-label">SAVINGS</p>
+
+                    <!-- "X-TRA SAVINGS" main heading -->
+                    <h1 class="main-heading">X-TRA SAVINGS <span>WITH X-47</span></h1>
+
+                </div>
+                <!-- Description paragraph -->
+                <div class="desc-right">
+                    <p class="description">
+                        Ditch the fuel costs. Switch to electric and power the future—efficient, smart, and built for
+                        tomorrow. Enter your details and discover your savings instantly!
+                    </p>
+                </div>
+
+            </div>
+            <div class="savings-container">
+                <div class="left-c">
+                    <!-- Header -->
+
+
+                    <!-- Slider 1 - Daily Distance -->
+                    <div class="slider-item">
+                        <input type="range" min="1" max="100" value="50" class="custom-slider" id="dailyDistance">
+                        <div class="slider-content">
+                            <label>DAILY DISTANCE (KMS)</label>
+                            <div class="value" id="dailyDistanceValue">1 Kms</div>
+                        </div>
+                    </div>
+
+                    <!-- Slider 2 - Mileage -->
+                    <div class="slider-item">
+                        <input type="range" min="10" max="60" value="25" class="custom-slider" id="mileage">
+                        <div class="slider-content">
+                            <label>MILEAGE OF THE BIKE</label>
+                            <div class="value" id="mileageValue">10 Kms</div>
+                        </div>
+                    </div>
+
+                    <!-- Slider 3 - Petrol Cost -->
+                    <div class="slider-item">
+                        <input type="range" min="70" max="150" value="100" class="custom-slider" id="petrolCost">
+                        <div class="slider-content">
+                            <label>COST OF PETROL</label>
+                            <div class="value" id="petrolCostValue">70 ₹</div>
+                        </div>
+                    </div>
+
+                    <!-- Slider 4 - Years -->
+                    <div class="slider-item">
+                        <input type="range" min="1" max="10" value="4" class="custom-slider" id="years">
+                        <div class="slider-content">
+                            <label>YEARS OF OWNERSHIP</label>
+                            <div class="value" id="yearsValue">1 Years</div>
+                        </div>
+                    </div>
+
+                    <!-- Total Savings -->
+                    <div class="total-savings">
+                        <h3 id="savingsLabel">Total Savings Over 1 Years:</h3>
+                        <div class="amount"><span class="currency">₹</span><span id="totalSavings">2,467</span></div>
+                    </div>
+                </div>
+
+                <!-- Cost Comparison -->
+                <div class="right-c">
+                    <div class="comparison-grid">
+
+
+
+
+                        <!-- Electric -->
+                        <div class="cost-card">
+                            <img class="x47" src="assets/x47-logo.png" alt="">
+                            <img src="/assets/electric-cost-x47.webp" alt="">
+                            <div class="bottom-content-wrapper">
+                                <h4 class="cost-txt">ELECTRICITY COST</h4>
+
+                                <div class="cost-details-wrapper">
+                                    <!-- Electric Card -->
+                                    <div class="cost-details">
+                                        <span class="cost-label">PER MONTH</span>
+                                        <span class="cost-value">₹<span id="evCostMonth">7</span></span>
+                                    </div>
+                                    <div class="cost-details">
+                                        <span class="cost-label">PER YEAR</span>
+                                        <span class="cost-value">₹<span id="evCostYear">88</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ICE Motorcycle (Petrol) -->
+                        <div class="cost-card">
+
+                            <h4 class="ice-motor">ICE MOTORCYCLE</h4>
+
+                            <img src="/assets/fuel-cost-img.webp" alt="">
+                            <div class="bottom-content-wrapper">
+                                <h3 class="cost-txt">FUEL COST</h3>
+                                <div class="cost-details-wrapper">
+                                    <!-- ICE Card -->
+                                    <div class="cost-details">
+                                        <span class="cost-label">PER MONTH</span>
+                                        <span class="cost-value">₹<span id="fuelCostMonth">213</span></span>
+                                    </div>
+                                    <div class="cost-details">
+                                        <span class="cost-label">PER YEAR</span>
+                                        <span class="cost-value">₹<span id="fuelCostYear">2,555</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <p class="note">Avg values considered as - Electricity price: ₹ 6/unit, Efficiency: 40 Wh/km (these
+                        values are based on assumptions)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
